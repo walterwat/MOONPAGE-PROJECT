@@ -16,6 +16,6 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>MoonPageApp</finalName>
+    <finalName>MoonPageWebApp</finalName>
   </build>
 </project>
