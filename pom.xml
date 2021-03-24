@@ -16,6 +16,6 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>javademoproject</finalName>
+    <finalName>MoonPageApp</finalName>
   </build>
 </project>
