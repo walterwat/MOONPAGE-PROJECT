@@ -2,5 +2,5 @@
 java (maven) application for time tracking on the job
 
 Hell students 
-Goog Morning
-Welcome to jenkins dashboard
+Goog Evening
+Welcome to jenkins dashboard.
