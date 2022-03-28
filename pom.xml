@@ -15,34 +15,6 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  <plugins>
-     <plugin> 
-                   <groupId>org.apache.maven.plugins</groupId> 
-                   <artifactId>maven-pmd-plugin</artifactId> 
-                   <version>3.9.0</version> 
-                   <configuration> 
-                       <targetJdk>${javac.target}</targetJdk> 
-                       <printFailingErrors>true</printFailingErrors> 
-                       <skipPmdError>false</skipPmdError> 
-                       <renderProcessingErrors>true</renderProcessingErrors>
-                       <excludeRoots> 
-                           <excludeRoot>target/generated-sources/java</excludeRoot> 
-                       </excludeRoots> 
-                   </configuration> 
-                   <dependencies> 
-                       <dependency> 
-                          <groupId>net.sourceforge.pmd</groupId> 
-                          <artifactId>pmd-core</artifactId> 
-                          <version>${pmd.version}</version> 
-                       </dependency> 
-                       <dependency> 
-                          <groupId>net.sourceforge.pmd</groupId> 
-                          <artifactId>pmd-java</artifactId> 
-                          <version>${pmd.version}</version> 
-                       </dependency> 
-                   </dependencies> 
-               </plugin>
-  </plugins>
   <build>
     <finalName>MoonPageWebApp</finalName>
   </build>
