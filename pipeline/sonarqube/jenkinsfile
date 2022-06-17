@@ -21,20 +21,21 @@ pipeline{
         // If you have configured more than one global server connection, you can specify its name
 //      sh "${scannerHome}/bin/sonar-scanner"
         sh "mvn sonar:sonar"
-    }
-        }
-        }
+             }
+         }
+     }
        stage('Unit Test'){
             steps{
                 dir('src'){
                     sh """
-                    set +e
+                    set +x
                     source ~/nvm/nvm.sh
+                    set -x
                     nvm use \$(cat .nvmrc)
                     npm run test:unit report coverage
                     """
-                  }
-              }
-          }     
+               }
+           }
+       }     
     }
 }
