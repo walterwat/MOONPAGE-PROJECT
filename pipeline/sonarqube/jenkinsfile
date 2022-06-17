@@ -20,12 +20,11 @@ pipeline{
                     sh """
                     set +e
                     source ~/nvm/nvm.sh
-                    set -e
                     nvm use \$(cat .nvmrc)
                     npm run test:unit report coverage
                     """
                   }
-               }
+              }
           }     
         stage('SonarQube analysis') {
 //    def scannerHome = tool 'SonarScanner 4.0';
