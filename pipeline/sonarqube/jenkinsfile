@@ -18,9 +18,9 @@ pipeline{
             steps{
                 dir('src'){
                     sh """
-                    set +x
+                    set +e
                     source ~/nvm/nvm.sh
-                    set -x
+                    set -e
                     nvm use \$(cat .nvmrc)
                     npm run test:unit report coverage
                     """
