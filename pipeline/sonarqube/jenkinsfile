@@ -30,7 +30,7 @@ pipeline{
                     sh """
                     set +x
                     source ~/nvm/nvm.sh
-                    set -x
+                    set -e
                     nvm use \$(cat .nvmrc)
                     npm run test:unit report coverage
                     """
