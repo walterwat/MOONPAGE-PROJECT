@@ -35,7 +35,7 @@
   <distributionManagement>
    <snapshotRepository>
       <id>maven-snapshots</id>
-      <url>http://ec2-54-198-250-62.compute-1.amazonaws.com:8081/repository/maven-snapshots/</url>
+      <url>http://ec2-54-144-6-221.compute-1.amazonaws.com:8081/repository/maven-snapshots/</url>
    </snapshotRepository>
 </distributionManagement>
 </project>
