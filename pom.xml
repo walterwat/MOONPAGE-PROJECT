@@ -23,8 +23,19 @@
                 <version>3.13.0</version>
             </plugin>
         </plugins>
+             <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <version>2.8.2</version>
+            </plugin>
+        </plugins>   
     </reporting>
   <build>
     <finalName>MoonPageWebApp</finalName>
   </build>
+ <distributionManagement>
+   <snapshotRepository>
+      <id>maven-snapshots</id>
+      <url>http://ec2-54-144-6-221.compute-1.amazonaws.com:8081/repository/maven-snapshots/</url>
+   </snapshotRepository>
+</distributionManagement>
 </project>
